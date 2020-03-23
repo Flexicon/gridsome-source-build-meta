@@ -1,0 +1,25 @@
+{
+  "name": "@flexicon/gridsome-source-build-meta",
+  "version": "0.0.1",
+  "description": "Gridsome source plugin to add build information to the global metadata schema.",
+  "main": "index.js",
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "gridsome-source",
+    "build-meta"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexicon/gridsome-source-build-meta.git"
+  },
+  "author": "Mike Repec <mikerepec@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flexicon/gridsome-source-build-meta/issues"
+  },
+  "homepage": "https://github.com/flexicon/gridsome-source-build-meta#readme",
+  "dependencies": {
+    "luxon": "^1.22.0"
+  }
+}
