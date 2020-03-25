@@ -1,15 +1,21 @@
-const { DateTime } = require('luxon')
-
 class BuildMetaSource {
   static defaultOptions() {
     return {
-      buildDateFormat: 'yyyy-LL-dd HH:mm:ss',
+      formatLocale: 'en-GB',
+      formatOptions: {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+      },
     }
   }
 
-  constructor(api, options) {
+  constructor(api, { formatLocale, formatOptions }) {
     api.loadSource(async store => {
-      const buildTime = DateTime.local().toFormat(options.buildDateFormat)
+      const buildTime = new Intl.DateTimeFormat(formatLocale, formatOptions).format(new Date())
       const buildTimeStamp = Date.now()
 
       store.addMetadata('buildInfo', { buildTime, buildTimeStamp })
