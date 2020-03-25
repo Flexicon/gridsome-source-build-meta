@@ -50,3 +50,23 @@ const formatOptions = {
   second: 'numeric',
 }
 ```
+
+## Metadata
+
+- `buildInfo`
+  - `buildTime` - `string` - Date time string formatted based on the options and generated at build time
+  - `buildTimestamp` - `number` - UNIX timestamp at which the current build was triggered
+
+
+## Example Query
+
+```graphql
+<static-query>
+  metadata {
+    buildInfo {
+      buildTime
+      buildTimestamp
+    }
+  }
+</static query> 
+```

@@ -1,6 +1,6 @@
 {
   "name": "@flexicon/gridsome-source-build-meta",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gridsome source plugin to add build information to the global metadata schema.",
   "main": "index.js",
   "keywords": [
